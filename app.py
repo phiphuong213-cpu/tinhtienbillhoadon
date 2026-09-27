@@ -2,7 +2,7 @@ import os
 from datetime import datetime
 import pandas as pd
 import streamlit as st
-st.image("logo1.jpg")
+
 st.set_page_config(page_title="Order Nhà Hàng", layout="wide")
  
 # Đường dẫn file dữ liệu dùng chung trên máy chủ
@@ -56,7 +56,7 @@ if "admin_logged_in" not in st.session_state:
 page = st.sidebar.radio("📋 Chọn trang hệ thống", ["🍽️ Order", "🔑 Admin"])
  
 if page == "🍽️ Order":
-   st.title("🍽️ Hệ thống Order Nhà Hàng_Dr Bình")
+   st.title("🍽️ Hệ thống Order Nhà Hàng_Dr Phuong")
    st.caption("Ghi nhận order nhanh chóng và chính xác theo thời gian thực")
  
    col1, col2 = st.columns([1, 1.3])
